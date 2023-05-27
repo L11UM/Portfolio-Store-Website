@@ -59,17 +59,16 @@ nav ul li a {
 
 .cta-button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #ad9f8d;
+  padding: 0.8rem 1.5rem;
+  background-color: #8b6b0b; /* Dark mustard yellow color code */
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 1.2rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #8c7e70;
+  background-color: #725907; /* Darker mustard yellow color code */
 }
 
 /* Sections styles */
@@ -116,17 +115,16 @@ section p {
 
 .buy-button {
   display: inline-block;
-  padding: 8px 16px;
-  background-color: #ad9f8d;
+  padding: 0.8rem 1.5rem;
+  background-color: #8b6b0b; /* Dark mustard yellow color code */
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 .buy-button:hover {
-  background-color: #8c7e70;
+  background-color: #725907; /* Darker mustard yellow color code */
 }
 
 /* Contact section styles */
