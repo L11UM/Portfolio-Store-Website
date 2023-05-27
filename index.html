@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Artistic Furniture</title>
+  <meta charset="UTF-8">
+  <title>Artistic Store</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Artistic Furniture</h1>
     <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Artistic Store Logo">
+      </div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">More</a>
-          <div class="dropdown-content">
-            <a href="#gallery">Gallery</a>
-            <a href="#specials">Specials</a>
-          </div>
-        </li>
       </ul>
     </nav>
+    <div class="hero">
+      <h1>Welcome to Artistic Store</h1>
+      <p>Discover unique and exquisite artworks.</p>
+      <a href="#products" class="cta-button">Explore Now</a>
+    </div>
   </header>
   
   <section id="home">
-    <h2>Welcome to Artistic Furniture</h2>
-    <p>Discover unique and beautiful furniture pieces that inspire.</p>
-    <a href="home.html" class="cta-button">Learn More</a>
+    <h2>Welcome to Artistic Store</h2>
+    <p>Discover unique and exquisite artworks.</p>
+    <a href="#products" class="cta-button">Explore Now</a>
   </section>
   
   <section id="products">
-    <h2>Our Furniture Collection</h2>
+    <h2>Featured Products</h2>
     <div class="product">
       <img src="product1.jpg" alt="Product 1">
       <h3>Product 1</h3>
@@ -50,13 +50,13 @@
   
   <section id="about">
     <h2>About Us</h2>
-    <p>Learn about our passion for creating unique furniture pieces.</p>
+    <p>Learn about our passion for art and craftsmanship.</p>
     <a href="about.html" class="cta-button">Read More</a>
   </section>
   
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Get in touch with us for any inquiries or assistance.</p>
+    <p>Get in touch with us for inquiries or assistance.</p>
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -71,20 +71,24 @@
     </form>
   </section>
   
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <p>Explore our stunning furniture gallery.</p>
-    <a href="gallery.html" class="cta-button">View Gallery</a>
-  </section>
-  
-  <section id="specials">
-    <h2>Specials</h2>
-    <p>Discover our current furniture specials and promotions.</p>
-    <a href="specials.html" class="cta-button">See Specials</a>
-  </section>
-  
   <footer>
-    <p>&copy; 2023 Artistic Furniture. All rights reserved.</p>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Artistic Store Logo">
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-icon"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#" class="social-icon"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#" class="social-icon"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2023 Artistic Store. All rights reserved.</p>
   </footer>
 </body>
 </html>
