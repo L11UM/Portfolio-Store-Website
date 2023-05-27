@@ -7,12 +7,12 @@ body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
 /* Set up basic styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: beige;
+  background-color: #F5F5DC; /* Beige */
   color: #333;
 }
 
 h1, h2, h3 {
-  color: sagegreen;
+  color: #008080; /* Teal */
 }
 
 .container {
@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 header {
-  background-color: duneyellow;
+  background-color: #F4A460; /* Sandy Brown */
   padding: 20px;
 }
 
@@ -48,6 +48,7 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #008080; /* Teal */
 }
 
 .product {
@@ -65,7 +66,7 @@ section h2 {
 
 .buy-button {
   display: inline-block;
-  background-color: duneyellow;
+  background-color: #F4A460; /* Sandy Brown */
   color: #333;
   padding: 8px 16px;
   border-radius: 4px;
@@ -74,13 +75,47 @@ section h2 {
 }
 
 .buy-button:hover {
-  background-color: sagegreen;
+  background-color: #008080; /* Teal */
   color: #fff;
 }
 
 footer {
-  background-color: duneyellow;
+  background-color: #F4A460; /* Sandy Brown */
   padding: 20px;
   text-align: center;
   color: #333;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  /* Adjust header and navigation */
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust product layout */
+  .product {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .product img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  /* Adjust footer */
+  footer {
+    padding: 10px;
+  }
 }
