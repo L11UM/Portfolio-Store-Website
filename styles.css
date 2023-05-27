@@ -1,26 +1,24 @@
-/* Reset default styles */
-html, body, h1, h2, h3, p, ul, li, form, input, textarea {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Garamond, serif;
+  line-height: 1.5;
   color: #333;
 }
 
-/* Global styles */
-body {
-  background-color: #f5f2e9;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header styles */
 header {
-  background-color: #eae3d9;
-  padding: 20px;
+  background-color: #e1dccf;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
@@ -28,154 +26,144 @@ header {
 }
 
 nav ul {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin-left: 1rem;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Hero section styles */
 .hero {
   text-align: center;
-  padding: 100px 0;
+  padding: 4rem 0;
 }
 
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 40px;
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #8b6b0b; /* Dark mustard yellow color code */
+  padding: 1rem 2rem;
+  background-color: #8b6b0b;
   color: #fff;
   font-size: 1.2rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .cta-button:hover {
-  background-color: #725907; /* Darker mustard yellow color code */
+  background-color: #725907;
 }
 
-/* Sections styles */
 section {
-  padding: 80px 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
 section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-section p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-/* Products section styles */
 .product {
-  display: inline-block;
-  width: 300px;
-  margin: 20px;
-  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .product img {
   width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.product h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.product p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 .buy-button {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #8b6b0b; /* Dark mustard yellow color code */
+  padding: 1rem 2rem;
+  background-color: #8b6b0b;
   color: #fff;
   font-size: 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .buy-button:hover {
-  background-color: #725907; /* Darker mustard yellow color code */
+  background-color: #725907;
 }
 
-/* Contact section styles */
+.portfolio-item {
+  margin-bottom: 2rem;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.view-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #8b6b0b;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.view-button:hover {
+  background-color: #725907;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 form label {
-  display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
-  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
-  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
-form input[type="submit"] {
-  background-color: #ad9f8d;
+.submit-button {
+  padding: 1rem 2rem;
+  background-color: #8b6b0b;
   color: #fff;
-  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-/* Footer styles */
+.submit-button:hover {
+  background-color: #725907;
+}
+
 footer {
-  background-color: #eae3d9;
-  padding: 20px;
+  background-color: #e1dccf;
+  padding: 1rem;
   text-align: center;
-}
-
-.footer-links ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.footer-links ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-social {
-  margin-top: 20px;
-}
-
-.footer-social a {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.footer p {
-  margin-top: 10px;
-  font-size: 14px;
 }
