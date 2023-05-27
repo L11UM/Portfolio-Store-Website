@@ -6,7 +6,7 @@ body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
 
 /* Set up basic styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Garamond, serif;
   background-color: #F5F5DC; /* Beige */
   color: #333;
 }
