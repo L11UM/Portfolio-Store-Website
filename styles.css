@@ -1,0 +1,86 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: beige;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: sagegreen;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: duneyellow;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: duneyellow;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: sagegreen;
+  color: #fff;
+}
+
+footer {
+  background-color: duneyellow;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
