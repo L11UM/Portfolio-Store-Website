@@ -1,168 +1,54 @@
-*/* Reset styles */
-* {
+/* Reset styles */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Garamond, serif;
-  line-height: 1.5;
-  color: #333;
-}
-
+/* Header styles */
 header {
-  background-color: #e1dccf;
+  background-image: url('4903511.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 2rem;
+  color: #ffffff;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo {
+  margin-bottom: 1rem;
 }
 
 .logo img {
   width: 100px;
 }
 
-nav ul {
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  list-style: none;
 }
 
-nav ul li {
-  margin-left: 1rem;
+.menu li {
+  margin-right: 1rem;
 }
 
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-h1, h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #8b6b0b;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.menu li a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-.cta-button:hover {
-  background-color: #725907;
+.menu li a:hover {
+  text-decoration: underline;
 }
 
-section {
-  padding: 4rem 0;
-  text-align: center;
+/* Main content styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.product {
-  margin-bottom: 2rem;
-}
-
-.product img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.buy-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #8b6b0b;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.buy-button:hover {
-  background-color: #725907;
-}
-
-.portfolio-item {
-  margin-bottom: 2rem;
-}
-
-.portfolio-item img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-.view-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #8b6b0b;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.view-button:hover {
-  background-color: #725907;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-form label {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.submit-button {
-  padding: 1rem 2rem;
-  background-color: #8b6b0b;
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.submit-button:hover {
-  background-color: #725907;
-}
-
+/* Footer styles */
 footer {
   background-color: #e1dccf;
   padding: 1rem;
